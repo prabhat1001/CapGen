@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# CapGen ☘️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot_21-6-2024_124850_localhost](https://github.com/prabhat1001/CapGen/assets/71027441/c601c778-83b5-41dd-b183-84f7ced3669e)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+CapGen is a web application that enables users to add captions to YouTube videos. Users can input YouTube video URLs, add captions with specific timestamps, and view the video with the captions overlaid.
 
-### `npm start`
+##Live Link: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Video URL Input**: Users can input YouTube video URLs to load videos.
+- **Caption Management**: Users can add, edit, and delete captions along with their timestamps.
+- **Video Playback with Captions**: Videos are played with the custom captions overlaid.
 
-### `npm test`
+## Technical Decisions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technology Stack
 
-### `npm run build`
+- **React**: Chosen for its component-based architecture, making the UI scalable and maintainable.
+- **CSS**: Styling was separated into a dedicated CSS file to maintain a clean separation of concerns.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Key Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Video Input and Loading**:
+   - Implemented using a controlled input field in React for the YouTube video URL.
+   
+2. **Caption Management**:
+   - Captions and their timestamps are managed in the component state.
+   - Added functionality to dynamically add and edit captions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Caption Overlay**:
+   - Custom overlay for captions was implemented to display text over the video based on the current playback time.
+   - Used state and effect hooks to sync caption display with video playback.
 
-### `npm run eject`
+### User Experience Considerations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Ease of Use**: Designed the UI to be intuitive with clear input fields and buttons for managing captions.
+- **Real-time Feedback**: Captions update in real-time as the video plays, providing immediate visual feedback to the user.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Potential Improvements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Enhanced Caption Editing**:
+   - Allow users to drag and drop captions on a timeline for more precise editing.
+   - Add features for bulk editing and importing/exporting caption files (e.g., WebVTT, SRT).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **User Authentication and Storage**:
+   - Implement user authentication to save and manage caption projects across sessions.
+   - Use cloud storage to persist user data and captions.
 
-## Learn More
+3. **Advanced Video Controls**:
+   - Provide more advanced video playback controls (e.g., variable playback speed, skipping).
+   - Integrate with YouTube's API for more seamless interaction with video data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Accessibility Features**:
+   - Add support for multiple languages and localization.
+   - Enhance accessibility with keyboard navigation and screen reader support.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Performance Optimization**:
+   - Optimize performance for loading and playing high-resolution videos.
+   - Implement lazy loading for videos and captions to improve initial load times.
 
-### Code Splitting
+With CapGen, enhancing your YouTube videos with custom captions has never been easier. We look forward to your feedback and contributions to make CapGen even better!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
