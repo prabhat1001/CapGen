@@ -6,7 +6,7 @@
 
 CapGen is a web application that enables users to add captions to YouTube videos. Users can input YouTube video URLs, add captions with specific timestamps, and view the video with the captions overlaid.
 
-##Live Link: 
+## Live Link: https://cap-gen.vercel.app/ 
 
 ## Features
 
