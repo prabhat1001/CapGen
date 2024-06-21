@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+
+
+.main-cont{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    max-height: 300vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.main-heading{
+    margin-top: 5rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.main-heading>span{
+    color: #75A47F;
+    font-family: "Playwrite NZ", cursive;
+}
+
+.sub-heading{
+    margin-top: 1rem;
+    color: #466a4f;
+    font-weight: 400;
+}
+
+.input-box{
+    border: 5px solid #D8EFD3;
+    height: 10vh;
+    max-height: 20rem;
+    width: 50vw;
+    border-radius: 5rem;
+    background-color: #fff;
+    padding: 0 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10vh;
+}
+
+.url-input{
+    width: 80%;
+    height: 85%;
+    border-radius: 5rem;
+    padding-left: 1rem;
+    background-color: #fff;
+}
+
+.url-input:focus {
+    outline: none;
+}
+
+.submit-url{
+    width: 20%;
+    height: 85%;
+    border-radius: 5rem;
+    background-color: #55AD9B;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-box-cont{
+    width: 80%;
+    height: auto;   
+    max-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 10rem;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 4rem;  
+    margin-bottom: 5rem;
+}
+
+.add-cap{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 5rem;
+    background-color: #95D2B3;
+    color: #fff;
+    font-weight: 500;
+}
+
+.submit-cap{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 5rem;
+    background-color: #95D2B3;
+    color: #fff;
+    font-weight: 500;
+}
+
+.cap-gen-box{
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timestamps{
+    height: 3rem;
+    width: 12%;
+    border-radius: 15px;
+    padding-left: 1rem;
+}
+
+.timestamps:focus, .cap-area:focus{
+    outline: none;
+}
+
+.cap-area{
+    resize: none;
+    height: 2rem;
+    width: 65%;
+    border-radius: 15px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vid-section{
+    margin-top: 1rem;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.img-icon{
+    width: 25%;
+    height: 70%;
+}
+
+.img-icon>img{
+    width: 100%;
+    height: 100%;
+}
+
+.vid-player-cont{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption-overlay {
+    position: absolute;
+    bottom: 25%;
+    color: white;
+    width: auto;
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#player{
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
+/* NAVBAR */
+
+
+.nav-cont{
+    height: 64px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-txt{
+    font-weight: 700;
+    margin-left: 3vw;
+    color: #55AD9B;
+}
+
+.gtb-btn{
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 25px;
+    background-color: #55AD9B;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.gtb-btn:hover{
+    background-color: #95D2B3;
+}
+
+
